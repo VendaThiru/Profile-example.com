@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="profile.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+:root{
+--Green: hsl(75, 94%, 57%);
+--White: hsl(0, 0%, 100%);
+--Grey-700: hsl(0, 0%, 20%);
+--Grey-800: hsl(0, 0%, 12%);
+--Grey-900: hsl(0, 0%, 8%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--Grey-900);
+
+}
+.card{
+    background-color: var(--Grey-700);
+    width: 450px;
+    font-family: "Red Hat Display",sans-serif;
+    border-radius: 25px;
+    font-size: 20px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.hero-image{
+    border-radius: 50%;
+
+}
+.profile-title{
+    color: var(--White);
+    font-size: 2.6rem;
+    margin: 2.0rem;
+    font-weight: 800;
+
+}
+.profile-location{
+    color: var(--Green);
+    text-align: center;
+    margin: 1.8rem;
+    padding-top: 0.1rem;
+    font-weight: 700;
+}
+.profile-description{
+    color: var(--White);
+    text-align: center;
+    margin: 2rem;
+    padding-top: 1.8rem;
+}
+button{
+    background-color: var(--Grey-700);
+    border-radius: 25px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    padding: 20px;
+
+}
+.buttons a{
+    text-align: center;
+    width: 450px;
+    background-color: var(--Grey-700);
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    font-weight: 400;
+    line-height: 4.5rem;
+    flex-direction: column;
+    background-color: var(--Grey-700);
+    color: var(--White);
+    border-radius: 25px;
+}
+button:hover{
+    background-color: var(--Green);
+}
+a:hover{
+    background-color: var(--Green);
+}
+    </style>
+</head>
+<body>
+
+    <div class="card">
+
+        <div>
+            <img class="hero-image" src="avatar-jessica.jpeg" alt="Hero Images">
+
+            <h2 class="profile-title">Jesikka Rendall</h2>
+            <p class="profile-location">London, United Kingdom</p>
+            <p class="profile-description">"Frontend developer and avid reader."</p>
+
+            <div class="buttons">
+                <button><a class="git" href="#">GitHub</a></button>
+                <button><a class="front" href="#">Frontend Mentor</a></button>
+                <button><a class="link" href="#">LinkedIn</a></button>
+                <button><a class="twt" href="#">Twitter</a></button>
+                <button><a class="insta" href="#">Instagram</a></button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
